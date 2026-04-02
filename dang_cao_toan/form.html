@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 <body>
 
 <h2>HTML Forms</h2>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+<div class="container mt-5">
+    <h2>HTML Forms với Bootstrap</h2>
+    <form action="/action_page.php">
+        <div class="mb-3">
+            <label for="fname" class="form-label">First name:</label>
+            <input type="text" id="fname" name="fname" value="Toan" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="lname" class="form-label">Last name:</label>
+            <input type="text" id="lname" name="lname" value="Dang" class="form-control">
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+</div>
 
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 
