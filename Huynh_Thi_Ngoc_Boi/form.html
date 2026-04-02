@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <h2>HTML froms</h2>
+   <div class="container mt-5" style="max-width: 500px;">
+    <h2 class="mb-4 text-center">HTML Forms</h2>
+
     <form action="/action_page.php">
-    <label for="fname">First name: Ngoc Boi</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-  
-    <label for="lname">Last name: Huynh Thi</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  
-    <input type="submit" value="Submit">
-</form>
+        <div class="mb-3">
+            <label for="fname" class="form-label">First name:</label>
+            <input type="text" class="form-control" id="fname" name="fname" value="Ngọc Bội">
+        </div>
+        
+        <div class="mb-3">
+            <label for="lname" class="form-label">Last name:</label>
+            <input type="text" class="form-control" id="lname" name="lname" value="Huỳnh">
+        </div>
+        
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form> 
+</div>
 </body>
 </html>
